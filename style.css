@@ -1,56 +1,66 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Этернити — Minecraft сервер</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="hero">
-    <h1>ЭТЕРНИТИ</h1>
-    <p class="ip">IP: play.eternitymc.ru</p>
-    <button onclick="copyIP()">СКОПИРОВАТЬ IP</button>
-</header>
-
-<section class="about">
-    <h2>О СЕРВЕРЕ</h2>
-    <p>Добро пожаловать на Этернити! Уникальные режимы, кланы и эпические события.</p>
-</section>
-
-<section class="clans">
-    <h2>КЛАНЫ СЕРВЕРА</h2>
-    <div class="cards">
-        <div class="card">🐉 Драконы</div>
-        <div class="card">🛡 Рыцари</div>
-        <div class="card">🔮 Маги</div>
-    </div>
-</section>
-
-<section class="news">
-    <h2>НОВОСТИ</h2>
-    <div class="cards">
-        <div class="card">Обновление 1.20 — новые боссы!</div>
-        <div class="card">Сезонный ивент уже начался!</div>
-    </div>
-</section>
-
-<section class="social">
-    <h2>ПРИСОЕДИНЯЙСЯ</h2>
-    <div class="cards">
-        <div class="card">Discord</div>
-        <div class="card">VK</div>
-        <div class="card">Telegram</div>
-        <div class="card">YouTube</div>
-    </div>
-</section>
-
-<script>
-function copyIP() {
-    navigator.clipboard.writeText("play.eternitymc.ru");
-    alert("IP скопирован!");
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    text-align: center;
 }
-</script>
 
-</body>
-</html>
+h1 {
+    font-size: 60px;
+    color: #c084fc;
+    text-shadow: 0 0 20px #9333ea;
+}
+
+h2 {
+    color: #a78bfa;
+    margin-top: 50px;
+}
+
+.hero {
+    padding: 100px 20px;
+}
+
+.ip {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+button {
+    background: linear-gradient(45deg, #7c3aed, #3b82f6);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #7c3aed;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #7c3aed;
+    padding: 30px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #4c1d95;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #9333ea;
+}
